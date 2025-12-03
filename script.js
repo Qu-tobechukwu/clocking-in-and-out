@@ -1,4 +1,4 @@
-const APPS_SCRIPT_URL = 'REPLACE_WITH_YOUR_APPS_SCRIPT_URL';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwFIza89j_aWKknrDXPULU61UvsS-yRrIPw_wH9sJE_vr9i0aPPp9n3P9_n7eRDBe5XFw/exec';
 
 
 async function postEntry(type){
