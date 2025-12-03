@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Miss Tiana — Clock & Invoice</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+<div class="brand">
+<img src="logo.svg" alt="logo" class="logo" />
+<h1>Miss Tiana</h1>
+<p class="sub">Clock • Track • Print</p>
+</div>
+</header>
+
+
+<main class="container">
+<section class="clock-card card">
+<div class="inputs">
+<input id="client" placeholder="Client / Project" />
+<input id="notes" placeholder="Notes (optional)" />
+</div>
+<div class="actions">
+<button id="clockInBtn" class="btn primary">Clock In</button>
+<button id="clockOutBtn" class="btn secondary">Clock Out</button>
+</div>
+<div class="status" id="status">Not clocked</div>
+</section>
+
+
+<section class="filter-card card">
+<div class="filters">
+<label>From <input type="date" id="fromDate" /></label>
+<label>To <input type="date" id="toDate" /></label>
+<label>Client <input id="filterClient" placeholder="All" /></label>
+<select id="typeFilter">
+<option value="all">All</option>
+<option value="in">Clock Ins</option>
+<option value="out">Clock Outs</option>
+</select>
+<button id="applyFilter" class="btn">Apply</button>
+<button id="clearFilter" class="btn">Clear</button>
+</div>
+</section>
+
+
+<section class="table-card card">
+<div class="table-actions">
+<button id="refreshBtn" class="btn">Refresh</button>
+<button id="printBtn" class="btn primary">Print Invoice</button>
+</div>
+<table id="logTable">
+<thead>
+<tr><th>Timestamp</th><th>Type</th><th>Client</th><th>Notes</th></tr>
+</thead>
+<tbody></tbody>
+</table>
+</section>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
