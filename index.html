@@ -21,6 +21,10 @@
 <div class="inputs">
 <input id="client" placeholder="Client / Project" />
 <input id="notes" placeholder="Notes (optional)" />
+<select id="workType">
+<option value="Normal">Normal Work – R200/hr</option>
+<option value="Cyber">Cybersecurity Work – R400/hr</option>
+</select>
 </div>
 <div class="actions">
 <button id="clockInBtn" class="btn primary">Clock In</button>
@@ -35,11 +39,13 @@
 <label>From <input type="date" id="fromDate" /></label>
 <label>To <input type="date" id="toDate" /></label>
 <label>Client <input id="filterClient" placeholder="All" /></label>
+<label>Work Type
 <select id="typeFilter">
 <option value="all">All</option>
-<option value="in">Clock Ins</option>
-<option value="out">Clock Outs</option>
+<option value="Normal">Normal</option>
+<option value="Cyber">Cybersecurity</option>
 </select>
+</label>
 <button id="applyFilter" class="btn">Apply</button>
 <button id="clearFilter" class="btn">Clear</button>
 </div>
@@ -53,7 +59,7 @@
 </div>
 <table id="logTable">
 <thead>
-<tr><th>Timestamp</th><th>Type</th><th>Client</th><th>Notes</th></tr>
+<tr><th>Timestamp</th><th>Type</th><th>Client</th><th>Notes</th><th>Work Type</th><th>Hours</th><th>Pay</th></tr>
 </thead>
 <tbody></tbody>
 </table>
