@@ -1,0 +1,11 @@
+{
+"manifest_version": 3,
+"name": "Miss Tiana — Quick Clock",
+"version": "1.0",
+"description": "Quick clock in/out for Miss Tiana — syncs to Google Sheets.",
+"action": {
+"default_popup": "popup.html",
+"default_icon": "icon128.png"
+},
+"permissions": ["storage","activeTab"]
+}
